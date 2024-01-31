@@ -1,0 +1,87 @@
+.footer_header {
+    font-size: 57px;
+    color: white;
+    font-family: Rubik Mono One;
+    flex-basis: 100%;
+}
+  
+footer {
+    overflow: auto;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 2em;
+    gap: 10px;
+    display: flex;
+    bottom: 0;
+    position: relative;
+    width: 100%;
+    background: rgb(90,0,119);
+    background: linear-gradient(173deg, rgba(90,0,119,1) 0%, rgba(132,0,173,1) 11%, rgba(135,0,177,1) 12%, rgba(101,0,134,1) 45%, rgba(101,0,134,1) 71%, rgba(130,0,171,1) 87%, rgba(135,0,177,1) 100%);
+} 
+.footer_der {
+    margin: 0;
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    gap: 10px;
+    flex: 1;
+}
+  
+.footer_izq {
+    flex-basis: 100%;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    width: 50%;
+    flex-direction: column;
+    flex: 1;
+}
+  
+.footer_izq textarea, .footer_der textarea {
+    font-size: 20px;
+    font-family: Azeret Mono;
+    box-sizing: border-box;
+    color: whitesmoke;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--purple6);
+}
+
+footer * textarea::placeholder {
+    color: #ccc;
+    font-size: 20px;
+}
+  
+.footer_msg {
+    flex-basis: 100%;
+}
+  
+.footer_abajo {
+    justify-content:center;
+    min-width: 0;
+    overflow-x: scroll;
+    padding: 1em;
+    gap: 2em;
+    color: grey;
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    overflow:auto;
+}
+  
+#submitbtn {
+    font-size: 22px;
+    padding: 10px 20px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-family: Rubik Mono One;
+    transition: 0.5s;
+}
+
+#submitbtn:hover {
+    cursor: pointer;
+}

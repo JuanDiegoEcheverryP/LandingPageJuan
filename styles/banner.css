@@ -1,0 +1,279 @@
+.banner {
+    padding: 10px 0 30px;
+    font-size: 140px;
+    font-family: fuenteBanner;
+    background: rgb(62,0,106);
+background: linear-gradient(124deg, rgba(62,0,106,1) 0%, rgba(108,19,153,1) 9%, rgba(93,10,142,1) 11%, rgba(122,15,153,1) 26%, rgba(139,10,107,1) 68%, rgba(114,4,85,1) 68%, rgba(145,10,103,1) 69%, rgba(114,4,85,1) 69%, rgba(145,10,103,1) 76%, rgba(113,9,95,1) 79%, rgba(145,10,103,1) 79%, rgba(105,5,85,1) 87%, rgba(114,4,85,1) 88%, rgba(60,7,83,1) 100%);
+    text-align: center;
+}
+
+.banner p {
+    margin: 200px 30% 220px;
+    padding: 0;
+    color: #FFF;
+
+    animation: animacion_bienvenida 10s infinite;
+    border-bottom: 5px ridge cyan;
+}
+
+
+@keyframes animacion_bienvenida {
+    0%   {color: #00ffff;}
+    25%  {color: #00aad4;}
+    50%  {color: #58fff1;}
+    75% {color: #15bbd8;}
+    100% {color: #00ffff;}
+  }
+
+.particle {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: coral;
+    transition-property: top;
+}
+
+#part1,#part2,#part3,#part4,#part5,#part6,#part7,#part8,#part9,#part10 {
+    left: -2%;
+}
+
+#part11,#part12,#part13,#part14,#part15,#part16,#part17,#part18,#part19,#part20  {
+    right: -98%;
+}
+
+#part1 {
+    top: -600px;
+    animation-delay: 0.2s;
+    animation: mover_izq1 2.5s ease-in-out infinite;
+}
+
+#part2 {
+    top: -550px;
+    animation-delay: 0.1s;
+    animation: mover_izq1 5s ease-in-out infinite;
+}
+
+#part3 {
+    top: -500px;
+    animation-delay: 0.3s;
+    animation: mover_izq2 3s ease-in-out infinite;
+}
+
+#part4 {
+    top: -450px;
+    animation-delay: 0.1s;
+    animation: mover_izq2 4s ease-in-out infinite;
+}
+
+#part5 {
+    top: -400px;
+    animation-delay: 0.1s;
+    animation: mover_izq1 3.1s ease-in-out infinite;
+}
+
+#part6 {
+    top: -350px;
+    animation-delay: 0.1s;
+    animation: mover_izq1 2.8s ease-in-out infinite;
+}
+
+#part7 {
+    top: -300px;
+    animation-delay: 0.3s;
+    animation: mover_izq2 4s ease-in-out infinite;
+}
+
+#part8 {
+    top: -250px;
+    animation-delay: 0.2s;
+    animation: mover_izq2 3.8s ease-in-out infinite;
+}
+
+#part9 {
+    top: -200px;
+    animation-delay: 0.3s;
+    animation: mover_izq2 2.8s ease-in-out infinite;
+}
+
+#part10 {
+    top: -150px;
+    animation-delay: 0.4s;
+    animation: mover_izq1 3.5s ease-in-out infinite;
+}
+
+
+
+@keyframes mover_izq1 {
+    0% {background-color: var(--purple2);
+        opacity: 1;
+        left: -2%;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {background-color: var(--purple3);
+    }
+    100% {background-color: var(--purple2);
+        opacity: 0;
+        left: 25%;
+    }
+}
+
+@keyframes mover_izq2 {
+    0% {background-color: var(--purple3);
+        opacity: 1;
+        left: -2%;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {background-color: var(--purple2);
+    }
+    100% {background-color: var(--purple3);
+        opacity: 0;
+        left: -35%;
+    }
+}
+
+@keyframes color1 {
+    0% {
+        background-color: var(--purple2);
+    }
+    50% {
+        background-color: var(--purple3);;
+    }
+    100% {
+        background-color: var(--purple2);;
+    }
+}
+
+@keyframes color2 {
+    0% {
+        background-color: var(--purple3);
+    }
+    50% {
+        background-color: var(--purple2);
+    }
+    100% {
+        background-color: var(--purple3);
+    }
+}
+
+#part11 {
+    top: -700px;
+    animation-delay: 0.1s;
+    animation: mover_der2 3.5s ease-in-out infinite;
+}
+
+#part12 {
+    top: -650px;
+    animation-delay: 0.2s;
+    animation: mover_der2 4s ease-in-out infinite;
+}
+
+#part13 {
+    top: -600px;
+    animation-delay: 0.1s;
+    animation: mover_der1 3.8s ease-in-out infinite;
+}
+
+#part14 {
+    top: -550px;
+    animation-delay: 0.3s;
+    animation: mover_der2 3.5s ease-in-out infinite;
+}
+
+#part15 {
+    top: -500px;
+    animation-delay: 0.1s;
+    animation: mover_der2 2.6s ease-in-out infinite;
+}
+
+#part16 {
+    top: -450px;
+    animation-delay: 0.3s;
+    animation: mover_der1 3.4s ease-in-out infinite;
+}
+
+#part17 {
+    top: -400px;
+    animation-delay: 0.1s;
+    animation: mover_der1 2.9s ease-in-out infinite;
+}
+
+#part18 {
+    top: -350px;
+    animation-delay: 0.1s;
+    animation: mover_der1 3.2s ease-in-out infinite;
+}
+
+#part19 {
+    top: -300px;
+    animation-delay: 0.4s;
+    animation: mover_der2 4s ease-in-out infinite;
+}
+
+#part20 {
+    top: -250px;
+    animation-delay: 0.2s;
+    animation: mover_der1 2.8s ease-in-out infinite;
+}
+
+
+@keyframes mover_der1 {
+    0% {background-color: var(--purple2);
+        opacity:1;
+        right: -99%;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {background-color: var(--purple3);
+    }
+    100% {background-color: var(--purple2);
+        opacity: 0;
+        right: -65%;
+    }
+}
+
+@keyframes mover_der2 {
+    0% {background-color: var(--purple3);
+        opacity: 1;
+        right: -99%;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {background-color: var(--purple2);
+    }
+    75% {
+
+    }
+    100% {background-color: var(--purple3);
+        opacity: 0;
+        right: -75%;
+    }
+}
+
+#division_banner{
+    position: absolute;
+    top: 695px;
+    width: 100%;
+    height: 25px;
+	background: linear-gradient(-45deg, var(--purple2), var(--purple3), var(--purple5), var(--purple6));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
