@@ -8,21 +8,33 @@ background: linear-gradient(124deg, rgba(62,0,106,1) 0%, rgba(108,19,153,1) 9%, 
 }
 
 .banner p {
-    margin: 200px 30% 220px;
+    white-space: nowrap;
+    overflow:visible;
+    position: relative;
+    margin: 200px 0% 240px;
     padding: 0;
     color: #FFF;
 
-    animation: animacion_bienvenida 10s infinite;
-    border-bottom: 5px ridge cyan;
+    animation: animacion_bienvenida 8s infinite;
+}
+
+.banner p::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 150px;
+    width: 40%;
+    left: 30%;
+    border-bottom: 5px ridge rgb(69, 118, 255);
 }
 
 
 @keyframes animacion_bienvenida {
-    0%   {color: #00ffff;}
-    25%  {color: #00aad4;}
-    50%  {color: #58fff1;}
-    75% {color: #15bbd8;}
-    100% {color: #00ffff;}
+    0%   {color: #ac63ff;}
+    25%  {color: #6b75fd;}
+    50%  {color: #f082ff;}
+    75% {color: #f185ff;}
+    100% {color: #c36dfd;}
   }
 
 .particle {

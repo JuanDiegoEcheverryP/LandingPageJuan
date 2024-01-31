@@ -1,21 +1,35 @@
 body{ 
-    background-color: #d159f5;
+    /*background-color: #46005e;*/
 }
 
-#content-bienvenida1 {
+#bienvenida {
+    margin: 0 50px;
+}
+
+.content-bienvenida {
     width: 50%;
-    background-color: #a112e4;
-    border: 8px solid #8109b9;
+    background: #c4c4c4;
+    border: 8px solid #5f5f5f;
     border-radius: 25px;
     font-size: 22px;
     padding: 20px;
-    margin-left: 50px;
+    margin: 0 50px;
+    margin-bottom: 150px;
     text-align: justify;
-    box-shadow: 5px 5px 5px #55007c;
+    box-shadow: 5px 5px 5px #353535;
 }
 
-#content-bienvenida1 img {
-    float: inline-start;
+.float-right {
+    margin-left: auto;
+  margin-right: 0;
+}
+
+.float-left {
+    margin-left: 0;
+  margin-right: auto;
+}
+
+.content-bienvenida img {
     width: 300px;
     height: 300px;
     padding: 0;
@@ -26,13 +40,13 @@ body{
 }
 
 .left-side {
-    float: left;
-    width: 25%;
+    margin-right: 20px;
+    float: inline-start;
     padding: 1%;
 }
   
 .right-side {
+    margin-left: 20px;
     float: right;
-    width: 25%;
     padding: 1%;
 }

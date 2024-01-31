@@ -85,3 +85,175 @@ footer * textarea::placeholder {
 #submitbtn:hover {
     cursor: pointer;
 }
+
+#contenedor_anim_footer{
+    filter: blur(1px);
+    background-color: #FFF;
+    position: relative;
+    top: 50px;
+    height: 200px;
+}
+
+.circulo {
+    position: relative;
+    top: 100px;
+    height: 100px;
+    width: 100px;
+    background: rgb(131 0 174);
+    border-radius: 50%;
+    filter: blur(10px);
+    display: inline-block; 
+    margin: -35px;
+}
+
+.circulo_1 {
+    animation: transladar 2.5s infinite;
+}
+
+.circulo_2 {
+    animation: transladar 2s infinite;
+
+}
+
+.circulo_3 {
+    animation: transladar 3s infinite;
+}
+
+.circulo_4 {
+    animation: transladar 1.5s infinite;
+}
+
+.circulo_5 {
+    animation: transladar 1.2s infinite;
+}
+
+.circulo_6 {
+    animation: transladar 3s infinite;
+}
+
+.circulo_7 {
+    animation: transladar 3.5s infinite;
+}
+
+.circulo_8 {
+    animation: transladar 5s infinite;
+}
+
+.circulo_9 {
+    animation: transladar 3.2s infinite;
+}
+
+.circulo_10 {
+    animation: transladar 1s infinite;
+}
+
+.circulo_11{
+    animation: transladar 2.5s infinite;
+}
+
+.circulo_12 {
+    animation: transladar 5s infinite;
+}
+
+.circulo_13 {
+    animation: transladar 3.6s infinite;
+}
+
+.circulo_14 {
+    animation: transladar 7s infinite;
+
+}
+
+.circulo_15 {
+    animation: transladar 4.2s infinite;
+
+}
+
+.circulo_16 {
+    animation: transladar 3s infinite;
+
+}
+
+.circulo_17 {
+    animation: transladar 2.5s infinite;
+
+}
+
+.circulo_18 {
+    animation: transladar 6.5s infinite;
+
+}
+
+.circulo_19 {
+    animation: transladar 3.8s infinite;
+
+}
+
+.circulo_20 {
+    animation: transladar 1.4s infinite;
+
+}
+
+.circulo_21{
+    animation: transladar 3.9s infinite;
+
+}
+
+.circulo_22 {
+    animation: transladar 6.2s infinite;
+
+}
+
+.circulo_23 {
+    animation: transladar 2.2s infinite;
+
+}
+
+.circulo_24 {
+    animation: transladar 3.2s infinite;
+
+}
+
+.circulo_25 {
+    animation: transladar 7.6s infinite;
+
+}
+
+.circulo_26 {
+    animation: transladar 3.9s infinite;
+
+}
+
+.circulo_27 {
+    animation: transladar 1.2s infinite;
+
+}
+
+.circulo_28 {
+    animation: transladar 3s infinite;
+
+}
+
+.circulo_29 {
+    animation: transladar 3.9s infinite;
+
+}
+
+.circulo_30 {
+    animation: transladar 1.9s infinite;
+
+}
+
+@keyframes transladar {
+	0% {
+        top: 250px;
+        opacity: 1;
+	}
+    50% {
+        opacity: 0.5;
+    }
+	100% {
+        opacity: 0;
+        top:150px;
+	}
+}
