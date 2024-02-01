@@ -15,17 +15,13 @@ background: linear-gradient(124deg, rgba(62,0,106,1) 0%, rgba(108,19,153,1) 9%, 
     padding: 0;
     color: #FFF;
 
-    animation: animacion_bienvenida 8s infinite;
-}
+    text-decoration: underline;
+    text-underline-offset: 25px;
+    text-decoration-style: ridge;
+    text-decoration-color: rgb(90 69 255) !important;
+    text-decoration-thickness: 5px !important;
 
-.banner p::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 150px;
-    width: 40%;
-    left: 30%;
-    border-bottom: 5px ridge rgb(69, 118, 255);
+    animation: animacion_bienvenida 8s infinite;
 }
 
 

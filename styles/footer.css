@@ -88,7 +88,6 @@ footer * textarea::placeholder {
 
 #contenedor_anim_footer{
     filter: blur(1px);
-    background-color: #FFF;
     position: relative;
     top: 50px;
     height: 200px;
