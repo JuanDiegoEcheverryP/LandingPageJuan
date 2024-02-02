@@ -1,0 +1,89 @@
+#closeChat {
+    position: fixed;
+    background-color: #a400aa48;
+    padding: 2px;
+    bottom: 10px;
+    right: 30px;
+    z-index: 1000;
+    color: white;
+    cursor:pointer;
+}
+
+#chat-bar-text {
+    visibility: hidden;
+    z-index: 999;
+    display: inline-flex;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 300px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.589);
+    border: 3px solid #cccc;
+    border-radius: 15px;
+    padding-left: 3px;
+  }
+  
+  #chat-bar-text * {
+    margin-top: 2px;
+    height: 80%;
+  }
+  
+  #chat-bar-entrada {
+    width: 74%;
+    margin-right: 2%;
+    border: 2px solid #cccd;
+    border-radius: 10px;
+    height:90%;
+  }
+  
+  #chat-bar-button {
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid #cccd;
+    height:91%;
+  }
+  
+  #chat-message-box {
+    visibility: hidden;
+    z-index: 999;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.582);
+    border: 4px solid #ffffffa6;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+  }
+  
+  .mensaje-box, .mensaje-user, .mensaje-content {
+    width:100%;
+  }
+  
+  .mensaje-content textarea {
+    overflow: none;
+  }
+  
+  .mensaje-user {
+    margin:0;
+    margin-left: 5px;
+    margin-top:8px;
+    font-size: 12px;
+  }
+  .mensaje-content {
+    font-size: 14px;
+    margin: 5px;
+    margin-top: 2px;
+    width: 90%;
+    background: rgba(224, 224, 224, 0.301);
+    border: 2px solid #7777777c;
+    border-radius: 0 0 15px 0;
+    padding: 2px 0 2px 5px;
+  }
+  
+  .mensaje-box {
+    margin-bottom: 10px;
+  }

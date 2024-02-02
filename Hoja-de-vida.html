@@ -16,9 +16,11 @@
     <link rel="stylesheet" type="text/css" href="./styles/navbar.css">
     <link rel="stylesheet" type="text/css" href="./styles/footer.css">
     <link rel="stylesheet" type="text/css" href="./styles/banner.css">
+    <link rel="stylesheet" type="text/css" href="./styles/chat.css">
 
     <link rel="stylesheet" type="text/css" href="./styles/hoja-de-vida.css">
 
+    <script src="./js/chat.js"></script>
     <script src="./js/footer.js"></script>
 
     <title>Hoja de vida</title>
@@ -131,20 +133,34 @@
         <div class="circulo circulo_30"></div>
     </div>
     <br>
+    <!-- Chat-->
+    <div id="chat-bar-text">
+        <input type="text" id="chat-bar-entrada" maxlength="30" placeholder="Escribe un mensaje">
+        <input type="button" value="Enviar" onclick="msg()" id="chat-bar-button">
+      </div>
+      <div id="chat-message-box">
+        <div class="mensaje-box">
+          <p class="mensaje-content">Inicia una conversacion</p>
+        </div>
+      </div>
+      <div id="closeChat" onclick="cerrarChat()">Abrir chat X</div>
+    <!-- Chat-->
+
+
     <footer>
         <form id="formFooter" onsubmit="validarFormFooter()">
             <span class="footer_header">Contactame!!</span>
             <div id="flexContainerFooter">
                 <div>
-                    <input id="footerNombre" type="text" placeholder="Nombre">
-                    <input id="footerEmail" type="email" placeholder="Nombre">
+                    <input id="footerNombre" type="text" placeholder="Nombre" required>
+                    <input id="footerEmail" type="email" placeholder="Correo" required>
                 </div>
                 <div>
-                    <textarea id="footerMensaje" placeholder="Nombre" maxlength="300"></textarea>
+                    <textarea id="footerMensaje" placeholder="Mensaje" maxlength="300" required></textarea>
                 </div>
             </div>
             <div class="footer_abajo">
-                <button id="formFooterBtn" onclick="jh()">Enviar</button>
+                <button id="formFooterBtn">Enviar</button>
             </div>
             
         </form>
