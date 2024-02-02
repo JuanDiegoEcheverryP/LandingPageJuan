@@ -1,4 +1,7 @@
 #closeChat {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
     position: fixed;
     background-color: #f8f8f88f;
     padding: 2px;
@@ -10,6 +13,8 @@
 }
 
 #chat-bar-text {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
     visibility: hidden;
     z-index: 999;
     display: inline-flex;
@@ -38,6 +43,8 @@
   }
   
   #chat-bar-button {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
     padding: 0 10px;
     border-radius: 10px;
     border: 2px solid #cccd;
@@ -68,13 +75,17 @@
   }
   
   .mensaje-user {
+    font-family: "Cute Font", sans-serif;
+    font-weight: 700;
     margin:0;
     margin-left: 5px;
     margin-top:8px;
-    font-size: 12px;
+    font-size: 14px;
   }
   .mensaje-content {
-    font-size: 14px;
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     margin: 5px;
     margin-top: 2px;
     width: 90%;
