@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="./styles/pagina-bienvenida.css">
 
     <script src="./js/navbar.js"></script>
+    <script src="./js/footer.js"></script>
 
     <title>Bienvenida</title>
 </head>
@@ -160,17 +161,23 @@
     </div>
     <br>
     <footer>
-        <span class="footer_header">Contactame!!</span>
-        <div class="footer_izq">
-            <textarea placeholder="Nombre" class="name"></textarea>
-            <textarea placeholder="Email" class="email"></textarea>
-        </div>
-        <div class="footer_der">
-            <textarea placeholder="Mensaje" class="footer_msg"></textarea>
-        </div>
-        <div class="footer_abajo">
-            <button id="submitbtn">Enviar</button>
-        </div>
+
+        <form id="formFooter" onsubmit="validarFormFooter()">
+            <span class="footer_header">Contactame!!</span>
+            <div id="flexContainerFooter">
+                <div>
+                    <input id="footerNombre" type="text" placeholder="Nombre" required>
+                    <input id="footerEmail" type="email" placeholder="Correo" required>
+                </div>
+                <div>
+                    <textarea id="footerMensaje" placeholder="Mensaje" maxlength="300" required></textarea>
+                </div>
+            </div>
+            <div class="footer_abajo">
+                <button id="formFooterBtn">Enviar</button>
+            </div>
+            
+        </form>
     </footer>
     <!--Fin Footer-->
 </body>

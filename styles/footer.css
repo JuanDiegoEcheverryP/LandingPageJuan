@@ -18,73 +18,6 @@ footer {
     background: rgb(90,0,119);
     background: linear-gradient(173deg, rgba(90,0,119,1) 0%, rgba(132,0,173,1) 11%, rgba(135,0,177,1) 12%, rgba(101,0,134,1) 45%, rgba(101,0,134,1) 71%, rgba(130,0,171,1) 87%, rgba(135,0,177,1) 100%);
 } 
-.footer_der {
-    margin: 0;
-    display: flex;
-    width: 50%;
-    flex-direction: row;
-    gap: 10px;
-    flex: 1;
-}
-  
-.footer_izq {
-    flex-basis: 100%;
-    margin: 0;
-    display: flex;
-    gap: 10px;
-    width: 50%;
-    flex-direction: column;
-    flex: 1;
-}
-  
-.footer_izq textarea, .footer_der textarea {
-    font-size: 20px;
-    font-family: Azeret Mono;
-    box-sizing: border-box;
-    color: whitesmoke;
-    outline: none;
-    resize: none;
-    border: none;
-    padding: 1em;
-    border-radius: 10px;
-    background-color: var(--purple6);
-}
-
-footer * textarea::placeholder {
-    color: #ccc;
-    font-size: 20px;
-}
-  
-.footer_msg {
-    flex-basis: 100%;
-}
-  
-.footer_abajo {
-    justify-content:center;
-    min-width: 0;
-    overflow-x: scroll;
-    padding: 1em;
-    gap: 2em;
-    color: grey;
-    width: 100%;
-    flex-basis: 100%;
-    display: flex;
-    overflow:auto;
-}
-  
-#submitbtn {
-    font-size: 22px;
-    padding: 10px 20px;
-    height: 50px;
-    border-radius: 20px;
-    border: none;
-    font-family: Rubik Mono One;
-    transition: 0.5s;
-}
-
-#submitbtn:hover {
-    cursor: pointer;
-}
 
 #contenedor_anim_footer{
     filter: blur(1px);
@@ -256,3 +189,80 @@ footer * textarea::placeholder {
         top:150px;
 	}
 }
+
+#formFooter {
+    width: 100%;
+}
+
+.footer_abajo {
+    justify-content:center;
+    min-width: 0;
+    overflow-x: scroll;
+    padding: 1em;
+    gap: 2em;
+    width: 100%;
+    flex-basis: 100%;
+    display: flex;
+    overflow:auto;
+}
+
+#flexContainerFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+#flexContainerFooter > div {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+#formFooter input, #footerMensaje{
+    display: block;
+    padding: 0;
+    width: 100%;
+    font-size: 20px;
+    font-family: Azeret Mono;
+    box-sizing: border-box;
+    color: #FFF;
+    outline: none;
+    resize: none;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: var(--purple6);
+}
+
+#footerNombre {
+    margin-bottom: 10px;
+}
+
+#formFooter input::placeholder,#formFooter textarea::placeholder {
+    color: #deb5ff;
+}
+
+#footerMensaje {
+    height: 100%;
+}
+
+#formFooterBtn {
+    padding: 15px 20px;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 850px) {
+    #flexContainerFooter {
+        display: block;
+    }
+
+    #footerMensaje {
+        height: 200px;
+    }
+  }
