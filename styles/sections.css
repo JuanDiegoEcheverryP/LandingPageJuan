@@ -1,0 +1,105 @@
+
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    ul{list-style: none;}
+    
+    .boton {
+        opacity: 0.5;
+        width: 50px;
+        margin: 0 auto;
+        margin-top: 10%;
+        animation-name: animacion_section_out;
+        animation-duration: 0.15s;
+    }
+    
+    .lineas {
+        position: fixed;
+        left: 75px;
+        top: 80px;
+        width: 50px;
+        height: 50px;
+        border-radius:7px;
+        background: #666;
+        margin: 0 auto;
+        padding: 7px;
+        cursor: pointer;
+    }
+    
+    .lineas > div {
+        height: 5px;
+        width: 100%;
+        background: white;
+        margin: 0 auto;
+        margin-top: 9px;
+        transition:all 1s;
+    }
+    
+    .lineas:hover > div:nth-child(2) { 
+        width: 50%; margin: 0 auto;margin-top: 9px;
+    }
+    .lineas:hover > div:last-child { 
+        width: 30%; margin: 0 auto;margin-top: 9px;
+    }
+    
+    .boton ul {
+        position: fixed;
+        top: 110px;
+        left: 85px;
+        height: 0; /* OCULTAMOS MENÚ */
+        overflow: hidden;
+        width: 200px;
+        margin-left: -118px;
+        transition:all 1.5s; 
+        
+    }
+    .boton ul li:first-child {
+        /* DIBUJAMOS EL TRIÁNFULO */
+        border: 20px solid transparent;
+        border-bottom-color:#666;
+        width: 0;
+        position: relative;
+        left: 50%;
+        margin-left: -20px
+    }
+    .boton ul li a {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        color:white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        background: #666;
+        border-bottom: 1px solid #dadada
+    }
+    
+    .boton ul li a:hover {
+        background-color: #838383;
+        border: 2px solid rgb(83, 83, 83);
+        box-shadow:0 -5px 0 rgb(87, 87, 87) inset;
+    }
+
+    .boton:hover {
+        animation-name: animacion_section_in;
+        animation-duration: 0.15s;
+        opacity: 1;
+    }
+    
+    .boton:hover ul {
+        height: 300px;
+    }
+
+    
+    
+    @keyframes animacion_section_in {
+        0%   {opacity: 0.5;}
+        100% {opacity: 1;}
+      }
+
+      @keyframes animacion_section_out {
+        0%   {opacity: 1;}
+        100% {opacity: 0.5;}
+      }
+    
