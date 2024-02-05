@@ -5,7 +5,7 @@
 .content-bienvenida {
     width: 50%;
     background: rgb(215,146,252);
-    background: linear-gradient(173deg, rgba(215,146,252,1) 0%, rgba(199,99,254,1) 19%, rgba(210,143,247,1) 44%, rgba(207,121,255,1) 68%, rgba(215,146,252,1) 100%);
+background: linear-gradient(173deg, rgba(215,146,252,1) 0%, rgba(190,77,252,1) 19%, rgba(210,143,247,1) 44%, rgba(202,107,255,1) 68%, rgba(215,146,252,1) 100%);
     border: 8px solid rgb(190 76 252);
     border-radius: 25px;
     font-size: 22px;
@@ -14,6 +14,12 @@
     margin-bottom: 150px;
     text-align: justify;
     box-shadow: 7px 7px 10px rgb(78, 0, 121);
+}
+
+.content-bienvenida:hover {
+    border: 8px solid rgb(88, 76, 252);
+    background: rgb(162, 146, 252);
+    background: linear-gradient(173deg, rgb(156, 146, 252) 0%, rgb(89, 77, 252)9%, rgb(145, 143, 247) 44%, rgb(107, 117, 255) 68%, rgb(146, 153, 252) 100%);
 }
 
 .float-right {
