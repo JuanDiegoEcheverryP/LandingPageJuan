@@ -7,3 +7,65 @@
     width: 800px;
     padding: 10px;
   }
+
+  .flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .flex-item {
+    background: #4c43ff16;
+    padding: 5px;
+    padding-left: 20px;
+    width: 30%;
+    min-width: 400px;
+    height: 800px;
+    overflow: scroll;
+    margin-top: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    margin-left: -90px;
+    overflow-x: hidden;
+  }
+
+  .flex-item ol {
+    font-size: 40px;
+  }
+
+.ul-content {
+    padding: 0;
+    padding-left: 10px;
+}
+
+.ul-content li img {
+    width: 100%;
+}
+
+  @media only screen and (max-width: 900px) {
+    .flex-item {
+        width: 90%;
+        
+      }
+  }
+
+
+
+.colegio ul {
+    list-style-image: url('../assets/svo.png');
+  }
+
+.certs {
+    padding-top: 150px;
+}
+
+  .certs ul {
+    list-style-image: url('../assets/svo2.png');
+  }
