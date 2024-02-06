@@ -24,6 +24,50 @@
 
   #content-spotify tr th * {
     border-radius:12px;
-    width: 100%;
+    width: 98%;
     height: 352;
+    overflow: none;
   }
+
+  
+  .flexbox {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.flexbox .box{
+    width: 25%;
+}
+.box img {
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+iframe {
+  padding: 5px 0;
+  transition: 1s padding;
+}
+
+iframe:hover {
+  padding: 5px;
+  background-color: rgba(0, 10, 125, 0.486);
+}
+
+iframe {
+  overflow: hidden;
+}
+
+.seccion-titulo {
+  text-align: center;
+  font-size: 72px;
+  color: rgb(135, 61, 255);
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.box p {
+  text-align: center;
+  font-weight: 700;
+}

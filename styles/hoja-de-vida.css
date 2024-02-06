@@ -18,7 +18,9 @@
   }
   
   .flex-item {
-    background: #4c43ff16;
+    background: rgb(71,108,255);
+    background: linear-gradient(301deg, rgba(71, 108, 255, 0.215) 0%, rgba(0, 21, 255, 0.182) 19%, rgba(54, 183, 252, 0.231) 44%, rgba(56, 66, 255, 0.289) 68%, rgba(25, 52, 255, 0.182) 100%);
+    border: 2px solid rgba(4, 0, 255, 0.46);
     padding: 5px;
     padding-left: 20px;
     width: 30%;
@@ -38,6 +40,7 @@
 
   .flex-item ol {
     font-size: 40px;
+    color: blue;
   }
 
 .ul-content {
@@ -69,3 +72,33 @@
   .certs ul {
     list-style-image: url('../assets/svo2.png');
   }
+
+#hoja_de_vida {
+  width: 100%;
+  height: 800px;
+}
+
+.center {
+  background: rgb(146,167,252);
+background: linear-gradient(301deg, rgba(146,167,252,1) 0%, rgba(46,63,255,1) 19%, rgba(143,237,247,1) 44%, rgba(56,66,255,1) 68%, rgba(146,158,252,1) 100%);
+}
+
+.center:hover {
+  background: rgb(71,108,255);
+  background: linear-gradient(301deg, rgba(71,108,255,1) 0%, rgba(0,21,255,1) 19%, rgba(54,183,252,1) 44%, rgba(56,66,255,1) 68%, rgba(25,51,255,1) 100%);
+}
+
+.colegio:hover, .certs:hover {
+  border-radius: 15px;
+  background-color: #4346ff57;
+}
+
+.seccion-titulo {
+  text-align: center;
+  font-size: 72px;
+  color: rgb(135, 61, 255);
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
