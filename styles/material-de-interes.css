@@ -1,6 +1,17 @@
 .center {
-    margin: auto;
-    width: 60%;
-    height: 70%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  }
+
+.center * {
+  display: inline-block;
+  margin: 0 2%;
+}
+
+  .column {
+    float: left;
+    width: 33.33%;
     padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
   }
