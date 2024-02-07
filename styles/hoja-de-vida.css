@@ -8,7 +8,7 @@
     padding: 10px;
   }
 
-  .flex-container {
+.flex-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -17,7 +17,7 @@
     list-style: none;
   }
   
-  .flex-item {
+.flex-item {
     background: rgb(71,108,255);
     background: linear-gradient(301deg, rgba(71, 108, 255, 0.215) 0%, rgba(0, 21, 255, 0.182) 19%, rgba(54, 183, 252, 0.231) 44%, rgba(56, 66, 255, 0.289) 68%, rgba(25, 52, 255, 0.182) 100%);
     border: 2px solid rgba(4, 0, 255, 0.46);
@@ -38,10 +38,9 @@
     overflow-x: hidden;
   }
 
-  .flex-item ol {
+.flex-item ol {
     font-size: 40px;
-    color: blue;
-  }
+}
 
 .ul-content {
     padding: 0;
@@ -52,25 +51,15 @@
     width: 100%;
 }
 
-  @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     .flex-item {
         width: 90%;
         
       }
   }
 
-
-
 .colegio ul {
     list-style-image: url('../assets/svo.png');
-  }
-
-.certs {
-    padding-top: 150px;
-}
-
-  .certs ul {
-    list-style-image: url('../assets/svo2.png');
   }
 
 #hoja_de_vida {
@@ -84,13 +73,9 @@ background: linear-gradient(301deg, rgba(146,167,252,1) 0%, rgba(46,63,255,1) 19
 }
 
 .center:hover {
+  border-radius: 10px;
   background: rgb(71,108,255);
   background: linear-gradient(301deg, rgba(71,108,255,1) 0%, rgba(0,21,255,1) 19%, rgba(54,183,252,1) 44%, rgba(56,66,255,1) 68%, rgba(25,51,255,1) 100%);
-}
-
-.colegio:hover, .certs:hover {
-  border-radius: 15px;
-  background-color: #4346ff57;
 }
 
 .seccion-titulo {
@@ -101,4 +86,83 @@ background: linear-gradient(301deg, rgba(146,167,252,1) 0%, rgba(46,63,255,1) 19
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
+}
+
+.Parent { 
+  display: flex; 
+  flex-direction: row; 
+} 
+
+.child1 { 
+  width: 48%; 
+  margin-right: 2%;
+  color: rgb(135, 61, 255);
+  background-color: rgba(100, 90, 245, 0.152);
+  text-align: right; 
+  color: white; 
+} 
+
+.child2 { 
+  width: 50%; 
+  color: #FFF; 
+  font-size: 24px;
+  background-color: rgba(100, 90, 245, 0.152);
+} 
+
+.child1 img, .child2 img {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.child1 li p, .child2 li p {
+  margin: 0 30%;
+  border-top: 2px solid #FFF;
+  font-size: 18px;
+}
+
+.child2 .colegio {  
+  color: #FFF; 
+}
+
+ol li::marker {
+  color: rgb(94, 18, 175);
+  font-weight: 700;
+}
+
+.colegio::marker {
+  color: rgba(196, 6, 6, 0);
+}
+
+.child1, .child2 {
+  border: 5px solid rgb(119, 0, 255);
+  background: rgb(46,87,252);
+  background: linear-gradient(301deg, rgba(46,87,252,1) 0%, rgba(122,138,255,1) 8%, rgba(71,166,255,1) 19%, rgba(53,79,255,1) 30%, rgba(54,183,252,1) 41%, rgba(95,104,255,1) 53%, rgba(55,111,255,1) 60%, rgba(56,169,255,1) 68%, rgba(50,42,255,1) 82%, rgba(116,131,255,1) 83%, rgba(107,95,255,1) 93%, rgba(127,70,255,1) 94%, rgba(93,111,255,1) 100%);
+  transition: border 2s ease;
+}
+
+.child1:hover, .child2:hover {
+  border: 5px solid rgb(137, 0, 114);
+  background: linear-gradient(301deg, rgb(74, 109, 251) 0%, rgb(150, 46, 255) 19%, rgb(143, 160, 247) 44%, rgb(189, 56, 255) 68%, rgba(146,158,252,1) 100%);
+}
+
+.colegio {
+  margin-top: 25px;
+}
+
+lista-no-ordenada li:before
+{
+	font-family:'FontAwesome';
+	content: "☛";
+	float: left;
+  font-size: 34px;
+	color: #9300c8;
+}
+
+.colegio:before
+{
+	font-family:'FontAwesome';
+	content: "";
+	float: left;
+  font-size: 34px;
+	color: #9300c8;
 }

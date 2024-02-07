@@ -71,3 +71,51 @@ iframe {
   text-align: center;
   font-weight: 700;
 }
+
+
+
+
+/* force image size */
+.slide img {
+  width: inherit;
+  height: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.slide {
+  white-space: nowrap;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slide > :first-child {
+  animation-name: slide;
+  animation-duration: 12s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
+
+.center {
+  margin: auto;
+}

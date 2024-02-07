@@ -62,4 +62,8 @@ background: linear-gradient(173deg, rgba(215,146,252,1) 0%, rgba(190,77,252,1) 1
     font-optical-sizing: auto;
     font-weight: 800;
     font-style: normal;
-  }
+}
+
+#fotoig {
+    width: 220px;
+}
