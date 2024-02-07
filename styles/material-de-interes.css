@@ -98,6 +98,10 @@ iframe {
   animation-iteration-count: infinite;
 }
 
+.slide:hover {
+  border: 5px solid rgba(111, 0, 255, 0.513);
+}
+
 @keyframes slide {
   0% {
     margin-left: 0;
