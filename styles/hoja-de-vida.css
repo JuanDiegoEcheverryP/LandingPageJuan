@@ -125,7 +125,7 @@ background: linear-gradient(301deg, rgba(146,167,252,1) 0%, rgba(46,63,255,1) 19
 }
 
 ol li::marker {
-  color: rgb(94, 18, 175);
+  color: rgb(215, 215, 0);
   font-weight: 700;
 }
 
@@ -149,20 +149,18 @@ ol li::marker {
   margin-top: 25px;
 }
 
-lista-no-ordenada li:before
-{
-	font-family:'FontAwesome';
-	content: "☛";
-	float: left;
+.lista-no-ordenada li {
   font-size: 34px;
-	color: #9300c8;
+  margin-left: 10px;
+  list-style-type: "☛";
 }
 
-.colegio:before
-{
-	font-family:'FontAwesome';
-	content: "";
-	float: left;
-  font-size: 34px;
-	color: #9300c8;
+
+
+.lista-no-ordenada li::marker {
+  color: #c80007;
+}
+
+.colegio::marker {
+  color: #FFF0 !important;
 }
