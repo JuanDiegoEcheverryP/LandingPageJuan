@@ -313,8 +313,8 @@
     <br>
     <!-- Chat-->
     <div id="chat-bar-text">
-        <form id="de" onsubmit="msg()">
-            <input type="text" id="chat-bar-user" maxlength="300" placeholder="Escribe un mensaje" required>
+        <form id="de" onsubmit="msg();return false">
+            <input type="text" id="chat-bar-user" maxlength="30" placeholder="Escribe un mensaje" required>
             <input type="text" id="chat-bar-entrada" maxlength="300" placeholder="Escribe un mensaje" required>
             <button id="chat-bar-button">Enviar</button>
         </form>
