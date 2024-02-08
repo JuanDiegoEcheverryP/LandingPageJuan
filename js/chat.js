@@ -48,7 +48,7 @@ function cerrarChat() {
         estadoChat = false
     }
     else {
-        document.querySelector("#closeChat").style.bottom = "480px";
+        document.querySelector("#closeChat").style.bottom = "490px";
         document.querySelector("#closeChat").innerHTML = "Cerrar X";
         document.querySelector("#chat-message-box").style.visibility = "visible";
         document.querySelector("#chat-bar-text").style.visibility = "visible";

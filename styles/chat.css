@@ -12,6 +12,7 @@
     z-index: 1000;
     color: rgb(0, 0, 0);
     cursor:pointer;
+    box-shadow: 2px 2px 10px black;
 }
 
 #chat-bar-text {
