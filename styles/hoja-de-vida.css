@@ -6,6 +6,7 @@
     margin: auto;
     width: 800px;
     padding: 10px;
+    border: 2px solid #6700c8;
   }
 
 .flex-container {
